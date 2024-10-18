@@ -1,0 +1,26 @@
+.header{
+  background-color: #027A56;
+  color: white;
+  text-align: center;
+  padding: clamp(10px, 5vw, 15px);
+  font-size: clamp(20px, 5vw, 30px);
+  margin: 0;
+  font-weight: 500;
+}
+
+.input-text {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+  }
+  
+.input-text.valid {
+  border: 3px solid green;
+}
+
+.input-text.invalid {
+  border-color: 3px solid red;
+}
