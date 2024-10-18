@@ -1,0 +1,19 @@
+.validation-box{
+    text-align: center;
+    font-size: clamp(12px, 4vw, 22px);
+    color: #ffffff;
+    font-weight: 600;
+    min-width: clamp(10px, 75vw, 500px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.isvalid{
+    background-color: #027A56;
+}
+
+.notvalid{
+    background-color: #B63333;
+}
