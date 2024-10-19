@@ -42,8 +42,8 @@ function DicoScrabble() {
       <h1 className='header'>Dico Scrabble</h1>
       <ValidationBox isWordValid={isWordValid} word={inputValue}/>
       <Score isWordValid={isWordValid} word={inputValue}/>
-      <div className='searchbar'>
-        <p className='asterisque'>* basé sur l’ODS 9 du 1er janvier 2024</p>
+      <p className='asterisque'>* basé sur l’ODS 9 du 1er janvier 2024</p>
+      <div className='input-wrapper'>
         <input
           type="text"
           value={inputValue}
@@ -51,6 +51,7 @@ function DicoScrabble() {
           placeholder="Rechercher un mot..."
           className={`input-text ${isWordValid === null ? '' : isWordValid ? 'valid' : 'invalid'}`}
         />
+        {inputValue && <button className="clear-button" onClick={() => {setInputValue('');setIsWordValid(null)}}>✕</button>}
       </div>
       <div className='propositions'>
 
