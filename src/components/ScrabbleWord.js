@@ -1,4 +1,3 @@
-// src/components/ScrabbleWord.js
 import React from 'react';
 import './ScrabbleWord.css'; // Importer le fichier CSS pour le style
 
@@ -10,7 +9,6 @@ const letterScores = {
 };
 
 const ScrabbleWord = ({ word }) => {
-  // Sépare le mot en lettres et crée un élément div pour chaque lettre avec son score
   const letters = word.split('').map((letter, index) => {
     const upperLetter = letter.toUpperCase();
     const score = letterScores[upperLetter] || 0; // Obtenir le score de la lettre, 0 si lettre inconnue
@@ -22,7 +20,10 @@ const ScrabbleWord = ({ word }) => {
     );
   });
 
-  return <div className="scrabble-word">{letters}</div>;
+  // Si le mot a plus de 9 lettres, appliquer la classe 'scrabble-word-long'
+  const wordClass = word.length > 8 ? 'scrabble-word-long' : 'scrabble-word';
+
+  return <div className={wordClass}>{letters}</div>;
 };
 
 export default ScrabbleWord;

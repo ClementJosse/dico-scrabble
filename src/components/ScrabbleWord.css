@@ -1,14 +1,28 @@
-/* src/components/ScrabbleWord.css */
 .scrabble-word {
     display: flex;
-    justify-content: center;
-    gap: clamp(1px, 2vw, 10px); /* Espacement entre les lettres */
+    gap: clamp(1px, 2vw, 10px);
+    justify-content: center; /* Aligne les lettres à gauche */
     margin-bottom: clamp(1px, 2vw, 10px);
     padding-left: clamp(1px, 4vw, 25px);
     padding-right: clamp(1px, 4vw, 25px);
+    overflow-x: auto; /* Ajoute un défilement horizontal */
+    overflow-y: hidden; 
+    white-space: nowrap; /* Empêche les lettres de se casser sur plusieurs lignes */
 }
-  
+
+.scrabble-word-long {
+    display: flex;
+    height: clamp(1px, 12vw, 65px);
+    margin-left: clamp(1px, 4vw, 22px);
+    margin-right: clamp(1px, 4vw, 22px);
+    justify-content: flex-start;
+    overflow-x: scroll; /* Force le défilement horizontal */
+    overflow-y: hidden; 
+    white-space: nowrap; /* Empêche les lettres de se casser sur plusieurs lignes */
+}
+
 .scrabble-tile {
+    top:3px;
     position: relative; /* Permet de positionner le score dans le coin */
     width: clamp(1px, 7vw, 40px);
     height: clamp(1px, 7vw, 40px);
@@ -22,9 +36,14 @@
     font-weight: 700;
     color: #482E00;
     text-transform: uppercase;
-    border-radius: clamp(1px, 1vw, 5px); /* Coins légèrement arrondis */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de relief */
+    border-radius: clamp(3px, 1vw, 5px); /* Coins légèrement arrondis */
+    flex-shrink: 0; /* Empêche les tuiles de se rétrécir */
+    margin-bottom: 10px;
+}
 
+.scrabble-word-long .scrabble-tile{
+    margin-left: clamp(0px, 1vw, 5px);
+    margin-right: clamp(0px, 1vw, 5px);
 }
 
 /* Style pour le score de la lettre dans le coin inférieur droit */
@@ -32,7 +51,32 @@
     position: absolute;
     bottom: 0px;
     right: 2px;
-    font-size: clamp(1px, 2vw, 11px);
+    font-size: clamp(0px, 2vw, 11px);
     font-weight: 500;
     color: #482E00;
+}
+
+/* Personnalisation de la barre de défilement */
+.scrabble-word-long::-webkit-scrollbar {
+    height: clamp(0px, 2vw, 10px);;
+    border-radius: 10px;
+}
+
+.scrabble-word-long::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.notvalid .scrabble-word-long::-webkit-scrollbar-thumb {
+    background-color: #800909;
+}
+.notvalid .scrabble-word-long::-webkit-scrollbar {
+    background-color: #D75454;
+}
+
+
+.isvalid .scrabble-word-long::-webkit-scrollbar-thumb {
+    background-color: #004B35;
+}
+.isvalid .scrabble-word-long::-webkit-scrollbar {
+    background-color: #2E9E7C;
 }
