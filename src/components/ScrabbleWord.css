@@ -2,27 +2,27 @@
 .scrabble-word {
     display: flex;
     justify-content: center;
-    gap: clamp(5px, 2vw, 10px); /* Espacement entre les lettres */
-    margin-bottom: 10px;
-    padding-left: clamp(5px, 4vw, 25px);
-    padding-right: clamp(5px, 4vw, 25px);
+    gap: clamp(1px, 2vw, 10px); /* Espacement entre les lettres */
+    margin-bottom: clamp(1px, 2vw, 10px);
+    padding-left: clamp(1px, 4vw, 25px);
+    padding-right: clamp(1px, 4vw, 25px);
 }
   
 .scrabble-tile {
     position: relative; /* Permet de positionner le score dans le coin */
-    width: clamp(20px, 7vw, 40px);
-    height: clamp(20px, 7vw, 40px);
+    width: clamp(1px, 7vw, 40px);
+    height: clamp(1px, 7vw, 40px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFE8BF; /* Couleur de fond pour ressembler à une tuile de Scrabble */
-    outline: 2px solid #E7B865; /* Utilisation de outline à la place de border */
+    outline: clamp(0px, 1vw, 3px) solid #E7B865; /* Utilisation de outline à la place de border */
     outline-offset: -1px;
-    font-size: clamp(12px, 3.5vw, 24px);
+    font-size: clamp(1px, 4vw, 24px);
     font-weight: 700;
-    color: #000000;
+    color: #482E00;
     text-transform: uppercase;
-    border-radius: 5px; /* Coins légèrement arrondis */
+    border-radius: clamp(1px, 1vw, 5px); /* Coins légèrement arrondis */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de relief */
 
 }
@@ -32,7 +32,7 @@
     position: absolute;
     bottom: 0px;
     right: 2px;
-    font-size: clamp(5px, 2vw, 11px);
+    font-size: clamp(1px, 2vw, 11px);
     font-weight: 500;
     color: #482E00;
 }

@@ -18,7 +18,7 @@ const ValidationBox = ({ isWordValid, word }) => {
       </div>
     );
   } else {
-    return null; // Aucun carré affiché si isWordValid est null
+    return (<div className="validation-box emptybox"></div>); // Aucun carré affiché si isWordValid est null
   }
 };
 

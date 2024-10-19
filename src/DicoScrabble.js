@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { data } from './data'; // Importer les données depuis data.js
 import './DicoScrabble.css'; // Un fichier CSS pour le style de la bordure
 import ValidationBox from './components/ValidationBox';
+import Score from './components/Score';
 
 function DicoScrabble() {
   const [inputValue, setInputValue] = useState('');
@@ -39,11 +40,8 @@ function DicoScrabble() {
   return (
     <div className='main'>
       <h1 className='header'>Dico Scrabble</h1>
-      <div className='result'>
-        <ValidationBox isWordValid={isWordValid} word={inputValue}/>
-        <div className='definition'>
-        </div>
-      </div>
+      <ValidationBox isWordValid={isWordValid} word={inputValue}/>
+      <Score isWordValid={isWordValid} word={inputValue}/>
       <div className='searchbar'>
         <p className='asterisque'>* basé sur l’ODS 9 du 1er janvier 2024</p>
         <input

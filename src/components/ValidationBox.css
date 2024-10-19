@@ -1,13 +1,14 @@
 .validation-box{
+    height: clamp(1px, 15vw, 85px);
     text-align: center;
-    font-size: clamp(12px, 4vw, 22px);
+    font-size: clamp(1px, 4vw, 22px);
     color: #ffffff;
     font-weight: 600;
-    min-width: clamp(10px, 75vw, 500px);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+    width: clamp(1px, 90vw, 500px);
+    padding-top: clamp(1px, 4vw, 22px);
+    padding-bottom: clamp(1px, 4vw, 22px);
+    border-radius: clamp(1px, 2vw, 10px);
+    margin-top: clamp(1px, 4vw, 20px);
 }
 
 .isvalid{

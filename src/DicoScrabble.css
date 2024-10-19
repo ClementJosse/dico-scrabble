@@ -9,9 +9,9 @@
   background-color: #027A56;
   color: white;
   text-align: center;
-  padding-top: clamp(10px, 5vw, 15px);
-  padding-bottom: clamp(10px, 5vw, 15px);
-  font-size: clamp(20px, 5vw, 30px);
+  padding-top: clamp(1px, 5vw, 15px);
+  padding-bottom: clamp(1px, 5vw, 15px);
+  font-size: clamp(1px, 5vw, 30px);
   margin: 0;
   font-weight: 400;
   width: 100%;
@@ -26,18 +26,18 @@
 }
 
 .asterisque{
-  font-size: clamp(7px, 3.5vw, 13px);
+  font-size: clamp(1px, 3.5vw, 13px);
   margin: 0;
   color:#8C8C8C;
 }
 
 .input-text {
   padding: 10px;
-  font-size: clamp(14px, 7vw, 25px);
+  font-size: clamp(1px, 7vw, 25px);
   border: 2px solid #ccc;
   border-radius: 10px;
   outline: none;
-  width: clamp(10px, 75vw, 300px);
+  width: clamp(1px, 75vw, 300px);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   background-color: #ffffff;
