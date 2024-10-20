@@ -68,9 +68,9 @@
 }
 
 .input-text.valid {
-  border: 3px solid #027A56;
+  border: 2px solid #027A56;
 }
 
 .input-text.invalid {
-  border: 3px solid #B63333;
+  border: 2px solid #B63333;
 }

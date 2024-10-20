@@ -1,0 +1,25 @@
+.propositions-list {
+    margin-top: 100px;
+    width: clamp(1px, 90vw, 500px);
+    overflow-x: auto; /* Scrollbar horizontale */
+    white-space: nowrap; /* Empêche le texte de se mettre sur plusieurs lignes */
+    transform: rotateX(180deg); /* Inverse l'élément pour que la scrollbar soit en haut */
+}
+
+.propositions-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    transform: rotateX(180deg); /* Réinverser le contenu pour l'afficher normalement */
+}
+
+
+.propositions-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E7B865;
+}
+.propositions-list::-webkit-scrollbar {
+    height: clamp(0px, 2vw, 10px);;
+    border-radius: 10px;
+    background-color: #FFE8BF;
+}

@@ -4,6 +4,7 @@ import { data } from './data'; // Importer les données depuis data.js
 import './DicoScrabble.css'; // Un fichier CSS pour le style de la bordure
 import ValidationBox from './components/ValidationBox';
 import Score from './components/Score';
+import Proposition from './components/Propositions';
 
 function DicoScrabble() {
   const [inputValue, setInputValue] = useState('');
@@ -53,9 +54,7 @@ function DicoScrabble() {
         />
         {inputValue && <button className="clear-button" onClick={() => {setInputValue('');setIsWordValid(null)}}>✕</button>}
       </div>
-      <div className='propositions'>
-
-      </div>
+      <Proposition inputValue={inputValue} />
     </div>
   );
 }
