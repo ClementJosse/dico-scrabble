@@ -21,7 +21,8 @@ const ScrabbleWord = ({ word }) => {
   });
 
   // Si le mot a plus de 9 lettres, appliquer la classe 'scrabble-word-long'
-  const wordClass = word.length > 8 ? 'scrabble-word-long' : 'scrabble-word';
+  const wordClass = word.length > 9 ? 'scrabble-word-long' : word.length < 9 ? 'scrabble-word': 'scrabble-word8';
+
 
   return <div className={wordClass}>{letters}</div>;
 };

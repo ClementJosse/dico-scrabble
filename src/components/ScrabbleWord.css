@@ -2,15 +2,25 @@
     display: flex;
     gap: clamp(1px, 2vw, 10px);
     justify-content: center; /* Aligne les lettres à gauche */
-    margin-bottom: clamp(1px, 2vw, 10px);
+    margin-bottom: clamp(1px, 3vw, 15px);
     padding-left: clamp(1px, 4vw, 25px);
     padding-right: clamp(1px, 4vw, 25px);
-    overflow-x: auto; /* Ajoute un défilement horizontal */
+    overflow-x: hidden;
     overflow-y: hidden; 
     white-space: nowrap; /* Empêche les lettres de se casser sur plusieurs lignes */
 }
 
-.scrabble-word-long {
+.scrabble-word8{
+    display: flex;
+    height: clamp(1px, 12vw, 65px);
+    margin-left: clamp(1px, 4vw, 22px);
+    margin-right: clamp(1px, 4vw, 22px);
+    justify-content: flex-start;
+    overflow-y: hidden; 
+    white-space: nowrap; /* Empêche les lettres de se casser sur plusieurs lignes */
+}
+
+.scrabble-word-long{
     display: flex;
     height: clamp(1px, 12vw, 65px);
     margin-left: clamp(1px, 4vw, 22px);
@@ -42,6 +52,11 @@
 }
 
 .scrabble-word-long .scrabble-tile{
+    margin-left: clamp(0px, 1vw, 5px);
+    margin-right: clamp(0px, 1vw, 5px);
+}
+
+.scrabble-word8 .scrabble-tile{
     margin-left: clamp(0px, 1vw, 5px);
     margin-right: clamp(0px, 1vw, 5px);
 }
