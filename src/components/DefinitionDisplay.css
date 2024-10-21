@@ -37,3 +37,13 @@
     margin-bottom: 10px;
     white-space: normal; /* Permettre le retour à la ligne à l'intérieur de chaque définition */
 }
+
+.definition-box::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #CCCCCC;
+}
+.definition-box::-webkit-scrollbar {
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    height: clamp(0px, 2vw, 10px);
+}
