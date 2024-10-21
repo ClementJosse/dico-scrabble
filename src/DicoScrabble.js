@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { data } from './data'; // Importer les données depuis data.js
+import { liste_mots } from './liste_mots'; // Importer les données depuis liste_mots.js
 import './DicoScrabble.css'; // Un fichier CSS pour le style de la bordure
 import ValidationBox from './components/ValidationBox';
 import Score from './components/Score';
@@ -29,7 +29,7 @@ function DicoScrabble() {
     setInputValue(cleanedValue); // Mettre à jour l'input
     if (cleanedValue !== '') {
       // Si l'input n'est pas vide, vérifier si le mot est dans la liste
-      const isValid = data.includes(cleanedValue);
+      const isValid = liste_mots.includes(cleanedValue);
       setIsWordValid(isValid);
     } else {
       // Si l'input est vide, ne pas afficher de validation
