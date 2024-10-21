@@ -3,23 +3,18 @@ import './ValidationBox.css'; // Un fichier CSS pour le style de la bordure
 import ScrabbleWord from './ScrabbleWord';
 
 const ValidationBox = ({ isWordValid, word }) => {
-  if (isWordValid === true) {
-    return (
-      <div className="validation-box isvalid">
-        <ScrabbleWord word={word}/>
-        Est valide au Scrabble
+  return (
+    <div className={`validation-box ${isWordValid === true ? 'isvalid' : isWordValid === false ? 'notvalid' : ''}`}>
+      <div className="word-container">
+        <ScrabbleWord word={word} />
       </div>
-    );
-  } else if (isWordValid === false) {
-    return (
-      <div className="validation-box notvalid">
-        <ScrabbleWord word={word}/>
-        N'est pas valide au Scrabble
-      </div>
-    );
-  } else {
-    return (<div className="validation-box emptybox"></div>); // Aucun carré affiché si isWordValid est null
-  }
+      {isWordValid !== null && (
+        <div className="validation-text">
+          {isWordValid ? 'Est valide au Scrabble' : "N'est pas valide au Scrabble"}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default ValidationBox;

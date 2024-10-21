@@ -1,8 +1,9 @@
+/*// src/components/ScrabbleWord.css*/
 .scrabble-word {
     display: flex;
+    height: clamp(1px, 12vw, 65px);
     gap: clamp(1px, 2vw, 10px);
     justify-content: center; /* Aligne les lettres à gauche */
-    margin-bottom: clamp(1px, 3vw, 15px);
     padding-left: clamp(1px, 4vw, 25px);
     padding-right: clamp(1px, 4vw, 25px);
     overflow-x: hidden;
@@ -94,10 +95,4 @@
 }
 .isvalid .scrabble-word-long::-webkit-scrollbar {
     background-color: #2E9E7C;
-}
-
-.propositions-elem .scrabble-word{
-    display: flex;
-    justify-content: left;
-    width: clamp(1px, 90vw, 500px);
 }

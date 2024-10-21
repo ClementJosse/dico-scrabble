@@ -1,3 +1,4 @@
+// src/components/ScrabbleWordList.js
 import React from 'react';
 import './ScrabbleWord.css'; // Importer le fichier CSS pour le style
 
@@ -19,7 +20,7 @@ const ScrabbleWordList = ({ word }) => {
       </div>
     );
   });
-  return <div className="scrabble-word">{letters}</div>;
+  return <div className="scrabble-word-long">{letters}</div>;
 };
 
 export default ScrabbleWordList;

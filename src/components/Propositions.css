@@ -1,25 +1,41 @@
 .propositions-list {
     margin-top: 100px;
     width: clamp(1px, 90vw, 500px);
-    overflow-x: auto; /* Scrollbar horizontale */
-    white-space: nowrap; /* Empêche le texte de se mettre sur plusieurs lignes */
-    transform: rotateX(180deg); /* Inverse l'élément pour que la scrollbar soit en haut */
 }
 
 .propositions-list ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block;
-    transform: rotateX(180deg); /* Réinverser le contenu pour l'afficher normalement */
 }
 
-
-.propositions-list::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #E7B865;
+.propositions-elem {
+    margin-bottom: 10px;
 }
-.propositions-list::-webkit-scrollbar {
-    height: clamp(0px, 2vw, 10px);;
+
+.scrollable-item {
+    width: 100%; /* Ensure the container takes full width */
+    overflow-x: auto; /* Horizontal scrollbar */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Scrollbar styling for WebKit browsers (Chrome, Safari) */
+.scrollable-item::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.scrollable-item::-webkit-scrollbar-track {
+    background-color: #FFE8BF; /* Light background for the scrollbar track */
     border-radius: 10px;
-    background-color: #FFE8BF;
+}
+
+.scrollable-item::-webkit-scrollbar-thumb {
+    background-color: #E7B865; /* Thumb color for better visibility */
+    border-radius: 10px;
+    border: 2px solid #FFE8BF; /* Add contrast to the thumb */
+}
+
+/* Scrollbar styling for Firefox */
+.scrollable-item {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: #E7B865 #FFE8BF; /* Thumb color and track color */
 }
