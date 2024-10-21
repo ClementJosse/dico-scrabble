@@ -31,8 +31,8 @@ function Proposition({ inputValue, onWordClick }) {
           const remainingPart = word.slice(inputValue.length);
 
           return (
-            <li className="propositions-elem" key={index} onClick={() => onWordClick(word)}>
-              <span className="icon-wrapper">
+            <li className="propositions-elem" key={index} >
+              <span className="icon-wrapper" onClick={() => onWordClick(word)}>
                 <ExportIcon className="icon" />
               </span>
               {" " + matchPart.toUpperCase()}
