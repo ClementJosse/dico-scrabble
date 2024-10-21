@@ -46,6 +46,15 @@ function DicoScrabble() {
     }
   };
 
+  // Fonction appelée quand l'utilisateur clique sur un mot
+  const handleWordClick = (word) => {
+    setInputValue(word); // Mettre à jour l'input avec le mot cliqué
+    setIsWordValid(liste_mots.includes(word)); // Vérifier si le mot est valide
+    if (inputRef.current) {
+      inputRef.current.focus(); // Remettre le focus sur l'input
+    }
+  };
+
   return (
     <div className='main'>
       <h1 className='header'>Dico Scrabble</h1>
@@ -63,7 +72,7 @@ function DicoScrabble() {
         />
         {inputValue && <button className="clear-button" onClick={handleClearInput}>✕</button>}
       </div>
-      <Proposition inputValue={inputValue} />
+      <Proposition inputValue={inputValue} onWordClick={handleWordClick} />
     </div>
   );
 }
