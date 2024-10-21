@@ -1,0 +1,39 @@
+.definition-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: clamp(1px, 7vw, 40px);
+    width: clamp(1px, 90vw, 500px);
+    padding: clamp(1px, 4vw, 22px);
+    overflow-x: auto; /* Ajout du slider horizontal */
+    white-space: normal; /* Permettre les définitions d'être sur plusieurs lignes */
+}
+
+.definition-text {
+    width: max-content; /* S'assure que la liste elle-même peut déborder horizontalement */
+}
+
+.definition-title {
+    text-align: left;
+    font-size: clamp(1px, 4vw, 22px);
+    font-weight: 500;
+    width: clamp(1px, 90vw, 500px);
+    border-radius: clamp(1px, 2vw, 10px);
+    padding-bottom: clamp(0px, 2vw, 10px);
+}
+
+.definition-box ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+    display: block; /* Conserver l'affichage par défaut des <ul> */
+    white-space: nowrap; /* Empêcher les retours à la ligne globaux, mais les <li> conserveront leurs retours à la ligne */
+    width: max-content; /* Permettre au contenu de la liste de déborder horizontalement */
+    overflow-x: visible; /* Pas de scroll dans la liste elle-même */
+}
+
+.definition-box li {
+    font-size: clamp(1px, 5vw, 16px);
+    margin-bottom: 10px;
+    white-space: normal; /* Permettre le retour à la ligne à l'intérieur de chaque définition */
+}

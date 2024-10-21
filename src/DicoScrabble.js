@@ -3,6 +3,8 @@ import { liste_mots } from './liste_mots'; // Importer les données depuis liste
 import './DicoScrabble.css'; // Un fichier CSS pour le style de la bordure
 import ValidationBox from './components/ValidationBox';
 import Score from './components/Score';
+import DefinitionDisplay from './components/DefinitionDisplay'; // Import du nouveau composant
+import dictionary from './dictionary.json'; // Importer le JSON contenant les définitions
 import Proposition from './components/Propositions';
 
 function DicoScrabble() {
@@ -72,6 +74,7 @@ function DicoScrabble() {
         />
         {inputValue && <button className="clear-button" onClick={handleClearInput}>✕</button>}
       </div>
+      {isWordValid && <DefinitionDisplay word={inputValue} dictionary={dictionary} />}
       <Proposition inputValue={inputValue} onWordClick={handleWordClick} />
     </div>
   );
