@@ -1,6 +1,8 @@
 .propositions-list {
     margin-top: clamp(1px, 7vw, 40px);
     width: clamp(1px, 90vw, 500px);
+    margin-bottom: clamp(1px, 14vw, 80px);
+
 }
 
 .propositions-list ul {
@@ -9,7 +11,7 @@
 }
 
 .propositions-elem {
-    font-size: clamp(1px, 6.5vw, 30px);
+    font-size: clamp(1px, 6vw, 35px);
     margin-bottom: 10px;
 }
 

@@ -6,6 +6,7 @@ import Score from './components/Score';
 import DefinitionDisplay from './components/DefinitionDisplay'; // Import du nouveau composant
 import dictionary from './dictionary.json'; // Importer le JSON contenant les définitions
 import Proposition from './components/Propositions';
+import Footer from './components/Footer';
 
 function DicoScrabble() {
   const [inputValue, setInputValue] = useState('');
@@ -58,6 +59,7 @@ function DicoScrabble() {
   };
 
   return (
+  <div>
     <div className='main'>
       <h1 className='header'>Dico Scrabble</h1>
       <ValidationBox isWordValid={isWordValid} word={inputValue}/>
@@ -77,6 +79,9 @@ function DicoScrabble() {
       {isWordValid && <DefinitionDisplay word={inputValue} dictionary={dictionary} />}
       <Proposition inputValue={inputValue} onWordClick={handleWordClick} />
     </div>
+    <Footer/>
+  </div>
+
   );
 }
 

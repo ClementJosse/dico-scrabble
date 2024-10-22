@@ -1,0 +1,65 @@
+    
+.footer{
+    bottom: 0;
+    background-color: #014732;
+    background-image: linear-gradient(#027A56 2px, transparent 2px), 
+                      linear-gradient(90deg, #027A56 2px, transparent 2px);
+    background-size: clamp(1px, 10vw, 60px) clamp(1px, 10vw, 60px); /* Ajustez la taille de la grille ici */
+    background-position: 0 0;
+    background-attachment: fixed; /* Garde la grille fixe lors du scroll */
+    width: 100%;
+    padding-bottom: clamp(1px, 4vw, 24px);
+    height:200;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: clamp(1px, 3vw, 18px);
+    font-weight: 500;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: clamp(1px, 4vw, 24px);
+    font-size: clamp(1px, 4vw, 24px);
+    font-weight: 500;
+}
+
+.line{
+    width: clamp(1px, 50vw, 300px);
+    height: clamp(0px, 0.16vw, 1px);
+    background-color: #ffffff;
+    border-radius: 100px;
+    margin: clamp(1px, 3vw, 18px);
+}
+
+.github-project{
+    height: clamp(1px, 8vw, 49px);
+    width: auto;
+    cursor: pointer;
+}
+
+.social{
+    display: subgrid;
+    height: clamp(1px, 7vw, 42px);
+    width: auto;
+    margin-top: clamp(1px, 3vw, 18px);
+    margin-left: clamp(1px, 2vw, 12px);
+    margin-right: clamp(1px, 2vw, 12px);
+    cursor: pointer;
+}
+
+.icon path {
+    transition: fill 0.2s ease; /* Transition fluide */
+}
+
+.social:hover path {
+    fill: #BCFCEC; /* Changement de couleur au survol */
+}
+
+.github-project:hover path {
+    fill: #BCFCEC; /* Changement de couleur au survol */
+}
