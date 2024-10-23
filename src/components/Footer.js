@@ -19,7 +19,7 @@ const ValidationBox = () => {
   return (
     <div className='footer'>
         <div className='star'>
-            {"N’hésite pas à ⭐ le projet sur Github ➝ "}
+            {"N’hésite pas à ⭐ le projet sur Github ➜ "}
             <GithubIcon className="github-project icon" onClick={() => window.open("https://github.com/ClementJosse/dico-scrabble")}/>
         </div> 
         <div className='clem'>© 2024 · Site créé avec ❤️ par Clément Josse</div>
