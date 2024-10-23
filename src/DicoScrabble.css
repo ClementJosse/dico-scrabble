@@ -18,6 +18,19 @@
   width: 100%;
 }
 
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  width: 100vw;  /* Prend toute la largeur de la fenêtre */
+  position: fixed; /* Fixe le chargement au centre de l'écran */
+  font-weight: 500;
+  font-size: clamp(1px, 5vw, 30px);
+  color: #ccc;
+}
+
+
 .result{
   height: 40vh;
 }
