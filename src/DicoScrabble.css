@@ -14,7 +14,7 @@
   padding-bottom: clamp(1px, 5vw, 15px);
   font-size: clamp(1px, 5vw, 30px);
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -27,20 +27,21 @@
 }
 
 .asterisque{
-  width: clamp(1px, 55vw, 300px);
-  font-size: clamp(1px, 2.4vw, 13px);
+  width: clamp(1px, 65vw, 360px);
+  font-size: clamp(1px, 2.7vw, 15px);
   margin: 0;
   color:#8C8C8C;
+  font-weight: 500;
 }
 
 .input-wrapper {
   position: relative;
-  width: clamp(1px, 55vw, 300px)
+  width: clamp(1px, 65vw, 360px)
 }
 
 .input-text {
-  padding: clamp(1px, 2vw, 10px) clamp(1px, 8vw, 40px) clamp(1px, 2vw, 10px) clamp(1px, 2vw, 10px); /* Ajuste le padding droit pour laisser de la place à la croix */
-  font-size: clamp(1px, 4.5vw, 25px);
+  padding: clamp(1px, 2.5vw, 12px) clamp(1px, 8vw, 40px) clamp(1px, 2.5vw, 10px) clamp(1px, 2.5vw, 13px);
+  font-size: clamp(1px, 5vw, 27px);
   border: 2px solid #ccc;
   border-radius: 10px;
   outline: none;
@@ -57,7 +58,7 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: clamp(1px, 3vw, 15px);
+  font-size: clamp(1px, 4vw, 22px);
   cursor: pointer;
   color: #ADADAD;
   outline: none;

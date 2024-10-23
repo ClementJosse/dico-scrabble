@@ -2,7 +2,7 @@
     width: clamp(1px, 90vw, 500px);
     height: clamp(1px, 7vw, 40px);;
     text-align: right; /* Aligne le texte sur la droite */
-    font-size: clamp(1px, 4vw, 22px);; /* Taille de police ajustable si nécessaire */
+    font-size: clamp(1px, 5vw, 27px);; /* Taille de police ajustable si nécessaire */
     font-weight: 600;
     color: #000000; /* Couleur du texte, ajustable selon votre design */
 }

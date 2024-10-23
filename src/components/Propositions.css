@@ -1,5 +1,9 @@
+.propositions-text{
+    transform: translateY(50%);
+}
+
 .propositions-list {
-    margin-top: clamp(1px, 7vw, 40px);
+    margin-top: clamp(1px, 5vw, 25px);
     width: clamp(1px, 90vw, 500px);
     margin-bottom: clamp(1px, 14vw, 80px);
 
@@ -12,7 +16,7 @@
 
 .propositions-elem {
     font-size: clamp(1px, 6vw, 35px);
-    margin-bottom: 10px;
+    margin-bottom: clamp(1px, 2vw, 10px);
 }
 
 .scrollable-item {
@@ -22,8 +26,8 @@
 }
 
 .icon {
-    width: clamp(1px, 5.5vw, 25px);
-    height: clamp(1px, 5.5vw, 25px);
+    width: clamp(1px, 6vw, 30px);
+    height: clamp(1px, 6vw, 30px);
     transition: all 0.3s ease-in-out; /* Ajout de la transition pour un effet fluide */
 }
 

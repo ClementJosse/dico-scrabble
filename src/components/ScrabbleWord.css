@@ -35,15 +35,15 @@
 .scrabble-tile {
     top:3px;
     position: relative; /* Permet de positionner le score dans le coin */
-    width: clamp(1px, 7vw, 40px);
-    height: clamp(1px, 7vw, 40px);
+    width: clamp(1px, 7.9vw, 44px);
+    height: clamp(1px, 7.9vw, 44px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFE8BF; /* Couleur de fond pour ressembler à une tuile de Scrabble */
     outline: clamp(0px, 1vw, 3px) solid #E7B865; /* Utilisation de outline à la place de border */
     outline-offset: -1px;
-    font-size: clamp(1px, 4vw, 24px);
+    font-size: clamp(1px, 5vw, 27px);
     font-weight: 700;
     color: #482E00;
     text-transform: uppercase;
@@ -67,8 +67,8 @@
     position: absolute;
     bottom: 0px;
     right: 2px;
-    font-size: clamp(0px, 2vw, 11px);
-    font-weight: 500;
+    font-size: clamp(0px, 2.3vw, 11px);
+    font-weight: 800;
     color: #482E00;
 }
 

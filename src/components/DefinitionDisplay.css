@@ -18,7 +18,7 @@
 
 .definition-title {
     text-align: left;
-    font-size: clamp(1px, 4vw, 22px);
+    font-size: clamp(1px, 5vw, 30px);
     font-weight: 500;
     border-radius: clamp(1px, 2vw, 10px);
     padding-bottom: clamp(0px, 2vw, 10px);
@@ -34,7 +34,7 @@
 }
 
 .definition-box li {
-    font-size: clamp(1px, 2.85vw, 16px);
+    font-size: clamp(1px, 4vw, 22px);
     margin-bottom: 10px;
     white-space: normal; /* Permettre le retour à la ligne à l'intérieur de chaque définition */
 }

@@ -23,32 +23,34 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: clamp(1px, 4vw, 24px);
+    padding-top: clamp(1px, 5vw, 30px);
     font-size: clamp(1px, 4vw, 24px);
     font-weight: 500;
 }
 
-.line{
-    width: clamp(1px, 50vw, 300px);
-    height: clamp(0px, 0.16vw, 1px);
-    background-color: #ffffff;
-    border-radius: 100px;
-    margin: clamp(1px, 3vw, 18px);
+.clem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: clamp(1px, 2vw, 12px);
+    padding-bottom: clamp(1px, 2vw, 12px);
+    font-size: clamp(1px, 3vw, 18px);
+    font-weight: 500;
 }
 
 .github-project{
-    height: clamp(1px, 8vw, 49px);
+    height: clamp(1px, 11vw, 55px);
     width: auto;
     cursor: pointer;
 }
 
 .social{
     display: subgrid;
-    height: clamp(1px, 7vw, 42px);
+    height: clamp(1px, 10vw, 50px);
     width: auto;
     margin-top: clamp(1px, 3vw, 18px);
-    margin-left: clamp(1px, 2vw, 12px);
-    margin-right: clamp(1px, 2vw, 12px);
+    margin-left: clamp(1px, 3vw, 18px);
+    margin-right: clamp(1px, 3vw, 18px);
     cursor: pointer;
 }
 

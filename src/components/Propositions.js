@@ -23,7 +23,7 @@ function Proposition({ inputValue, onWordClick }) {
 
   return (
     <div className="propositions-list">
-      <p className="asterisque">Propositions de mots:</p>
+      <p className="asterisque propositions-text">Propositions de mots:</p>
       <ul>
         {filteredWords.map((word, index) => {
           // Extraire la partie du mot qui correspond à inputValue

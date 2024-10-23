@@ -1,7 +1,7 @@
 .validation-box{
-    height: clamp(1px, 15vw, 85px);
+    height: clamp(1px, 17vw, 95px);
     text-align: center;
-    font-size: clamp(1px, 4vw, 22px);
+    font-size: clamp(1px, 5vw, 27px);
     color: #ffffff;
     font-weight: 600;
     width: clamp(1px, 90vw, 500px);

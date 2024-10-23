@@ -22,8 +22,7 @@ const ValidationBox = () => {
             {"N’hésite pas à ⭐ le projet sur Github ➝ "}
             <GithubIcon className="github-project icon" onClick={() => window.open("https://github.com/ClementJosse/dico-scrabble")}/>
         </div> 
-        <hr class="line"></hr>
-        © 2024 · Site créé avec ❤️ par Clément Josse
+        <div className='clem'>© 2024 · Site créé avec ❤️ par Clément Josse</div>
         <div className='socials'>
             <LinkedinIcon className="social icon" onClick={() => window.open("https://www.linkedin.com/in/clement-josse")}/>
             <GithubIcon className="social icon" onClick={() => window.open("https://github.com/ClementJosse")}/>
