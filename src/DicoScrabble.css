@@ -20,6 +20,7 @@
 
 .loading {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh; /* Prend toute la hauteur de la fenêtre */
@@ -28,6 +29,20 @@
   font-weight: 500;
   font-size: clamp(1px, 5vw, 30px);
   color: #ccc;
+}
+
+.spinning-letter {
+
+  animation: spin 2s linear infinite; /* 2s est la durée de rotation, ajustez si besoin */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
 }
 
 
