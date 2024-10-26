@@ -1,6 +1,6 @@
 # Dictionnaire du Scrable Web (ODS 9)
 
-<img src="./src/dicoscrabble.gif" width="500">
+<img src="./src/dicoscrabble.gif">
 
 ### Ce projet est actuellement en ligne à l'adresse: [cjosse.com/dicoscrabble](https://cjosse.com/dicoscrabble/)
 
