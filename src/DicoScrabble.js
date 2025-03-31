@@ -25,7 +25,7 @@ function DicoScrabble() {
   useEffect(() => {
     const loadDictionary = async () => {
       try {
-        const response = await fetch('https://cjosse.com/dicoscrabble/dico.json');
+        const response = await fetch('https://dicoscrabble.cjosse.com/dico.json');
         const data = await response.json();
         setDictionary(data);
         setLoading(false); 
