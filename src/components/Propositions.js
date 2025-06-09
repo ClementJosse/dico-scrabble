@@ -14,7 +14,8 @@ function Proposition({ inputValue, onWordClick }) {
   // Filtrer les mots qui commencent par inputValue, mais ne sont pas identiques à inputValue
   const filteredWords = liste_mots
     .filter((word) => word.startsWith(searchValue) && word !== searchValue)
-    .slice(0, 20);
+    .sort((a, b) => a.length - b.length || a.localeCompare(b))
+    .slice(0, 50);
 
   // Ne pas afficher la section s'il n'y a pas de mots correspondant
   if (filteredWords.length === 0) {
